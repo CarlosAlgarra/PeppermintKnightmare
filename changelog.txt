@@ -1,0 +1,30 @@
+02/26/2016:
+-------------------------------------------------------------------------------------------------------
+Implemented triggers, a function to quickly create sequences of spikes and provided a fix to 
+	the "floating space above platforms" problem.
+Changes were made to the constructor of the spikes, platforms, and trigger classes, see Level01 subclass
+	in the code for examples.
+
+
+Notes:  Triggers only trigger moving platforms and other triggers.
+	Added a placeholder background, but it creates immense lag so that section was commented out, 
+		it can be found under the draw function of the Level superclass. 
+	In fixing the platforms I introduced a bug that I did not debug, in which if you fall beyond 
+		the screen the character floats there and loses the correct proportions, the character 
+		can be reset by jumping.
+	Blitting images with offset allows the image to be grabbed starting from offset, thus allowing
+		for extra empty space in images to be ignored.
+	The level end check was not implemented.
+	Carlo's nor Kristina's code has been full merged into this version.
+
+
+2/26 10AM:
+Carlos
+-------------------------------------------------------------------------------------------
+I Copied this log over here and created a main file where we should all merge our versions.
+I have already merged my part and used Baldo's file as the base.
+
+	
+
+	
+      
